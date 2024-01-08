@@ -1,0 +1,20 @@
+Weather API:
+
+https://open-meteo.com/en/docs/
+Free, No Auth, Can be tested from browser itself
+
+Example request to get current weather from latitude longitude => 
+https://api.open-meteo.com/v1/forecast?latitude=17.1774&longitude=75.9526&current=temperature_2m
+
+Some key points:
+- Intervals can be set using parameters: "hourly", "daily" and "current"
+- For each such variable, temperature variables must be provided 
+    (like temperature_2m refers to air temperature 2m above ground)
+    (List of variables can be found on docs)
+
+Location Coordinates API:
+
+https://nominatim.org/release-docs/develop/api/Search/
+
+Example equest to get data about a queried location (q) in json format =>
+https://nominatim.openstreetmap.org/search?q=Uttarpara&format=json&limit=1
